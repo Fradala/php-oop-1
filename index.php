@@ -13,11 +13,20 @@ class Movie {
     }
 
     public function displayMovieInfo() {
-        echo "Title of the movie: {$this->title}\n";
-        echo "Genre of the movie: {$this->genre}\n";
-        echo "Release Year of the movie: {$this->releaseYear}\n";
+        echo "Title: {$this->title}<br>";
+        echo "Genre: {$this->genre}<br>";
+        echo "Release Year: {$this->releaseYear}<br>";
     }
 }
 
 $movie1 = new Movie("The Godfather", "Crime/Drama", 1972);
 $movie2 = new Movie("The Dark Knight", "Action/Crime/Drama", 2008);
+
+
+echo "Informazioni su Movie 1: <br>";
+$movie1->displayMovieInfo();
+echo "\n";
+
+
+echo "Informazioni su Movie 2: <br> ";
+$movie2->displayMovieInfo();
